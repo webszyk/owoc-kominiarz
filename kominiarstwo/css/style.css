@@ -41,13 +41,14 @@
   padding: 0;
 }
 
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ebecf2;
 }
 
 .green-text {
-  color: #ff5e00ff;
+  color: #ff2f00ff;
 }
 
 .shadow-bg {
@@ -67,7 +68,7 @@ html {
 
 .underline {
   margin: auto auto;
-  background-color: #ff5e00ff;
+  background-color: #ff2f00ff;
   width: 60px;
   height: 4px;
   margin-bottom: 50px;
@@ -96,7 +97,7 @@ nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link.show,
 nav .navbar-brand:focus,
 nav .navbar-brand:hover {
-  color: #ff5e00ff;
+  color: #ff2f00ff;
 }
 
 header.hero-img {
@@ -149,17 +150,17 @@ header.hero-img .fa-angles-down {
   margin-top: 30px;
 }
 .aboutus .aboutus-card-title {
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 .aboutus .aboutus-card-text {
-  font-size: 14px;
+  font-size: 16px;
 }
 .aboutus .aboutus-hover {
   transition: color 0.3s;
 }
 .aboutus .aboutus-hover:hover {
-  color: rgb(57, 194, 87);
+  color: #ff2f00ff;
 }
 
 .aboutus-img {
@@ -218,7 +219,7 @@ header.hero-img .fa-angles-down {
 }
 .prices .price-title {
   text-transform: uppercase;
-  color: #ff5e00ff;
+  color: #ff2f00ff;
   font-weight: bold;
 }
 .prices .price-tag {
@@ -234,7 +235,7 @@ header.hero-img .fa-angles-down {
 }
 .prices .price-info a {
   text-decoration: none;
-  color: #ff5e00ff;
+  color: #ff2f00ff;
 }
 
 .team {
@@ -270,12 +271,12 @@ header.hero-img .fa-angles-down {
 }
 .team .card i {
   padding-right: 15px;
-  color: rgb(57, 194, 87);
+  color: #ff2f00ff;
   font-size: 20px;
 }
 .team .card a {
   text-decoration: none;
-  color: #ff5e00ff;
+  color: #ff2f00ff;
   font-size: 20px;
 }
 .team .card .card-title {
@@ -308,7 +309,7 @@ header.hero-img .fa-angles-down {
     font-size: 30px;
   }
   .btn-outline-success {
-    font-size: 30px;
+    font-size: 60px;
   }
   .aboutus-img {
     font-size: 18px;
@@ -323,7 +324,7 @@ header.hero-img .fa-angles-down {
   font-size: 25px;
 }
 .contact i:hover {
-  color: #ff5e00ff;
+  color: #ff2f00ff;
 }
 .contact h3 {
   margin-bottom: 20px;
