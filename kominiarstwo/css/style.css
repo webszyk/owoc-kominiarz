@@ -47,33 +47,17 @@ body {
   background-color: #ebecf2;
 }
 
-.logo-img {
-  position:relative;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width:100px;
-  height:60px;
-  margin-bottom: 35px;
-  z-index: 0;
-}
 
-.logo-img-footer {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width:230px;
-  height:120px;
-  margin-bottom: 55px;
-  z-index: 0;
-}
 
 .red-text {
   color: #d86d48;
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.85);
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  background-color: rgba(26, 26, 26, 0.95); /* Ciemne, lekko przezroczyste tło */
+  backdrop-filter: blur(5px); /* Efekt "oszronionej szyby" dla nowoczesnego wyglądu (działa w nowszych przeglądarkach) */
+  box-shadow: -1px -2px 18px 3px rgb(240 68 24) /* Subtelny cień oddzielający od treści */
   transition: 0.6s;
 }
 
@@ -95,16 +79,30 @@ html {
   margin-bottom: 50px;
 }
 
+/* ==========================================================================
+   Nawigacja i Logo
+   ========================================================================== */
+
 nav {
   z-index: 1;
-  transition: background-color 0.6s;
+  transition: 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
   text-transform: uppercase;
+  /* background-color: rgba(0, 0, 0, 0.85); */
 }
 nav .navbar-toggler {
   padding: 10px 15px;
+   border-color: rgba(255, 255, 255, 0.5); /* Lepszy wygląd przycisku na przezroczystym tle */
 }
+
+nav .fa-bars {
+  color: #fff;
+}
+
 nav .navbar-brand {
-  font-size: 24px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
   font-weight: bold;
 }
@@ -116,11 +114,54 @@ color: #fff;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
-nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.active{
+  color: #d86d48 !important; /* Używamy Twojego pomarańczowego koloru */
+},
 nav .navbar-nav .nav-link.show,
 nav .navbar-brand:focus,
 nav .navbar-brand:hover {
+  color: #fff; /* Zapobiegamy zmianie koloru logo po najechaniu */
+}
+
+/* ==========================================================================
+   Nawigacja i Logo
+   ========================================================================== */
+
+/* 1. Kontener Flexbox dla logo i tekstu - Z KONTROLĄ SZEROKOŚCI */
+nav .navbar-brand {
+  width: 180px;           /* KLUCZOWA ZMIANA: Ustawiamy stałą szerokość dla całej sekcji logo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;        /* Zachowujemy Twoje oryginalne style */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 2. Style dla obrazka logo (ta część pozostaje bez zmian) */
+.logo-img {
+  width: 100%;            /* Logo nadal zajmuje 100% szerokości swojego rodzica (teraz 180px) */
+  height: auto;
+  margin-bottom: 8px;
+}
+
+/* 3. Style dla samego tekstu (ta część pozostaje bez zmian) */
+.brand-text {
+  line-height: 1;
+  font-size:16px;
+}
+
+.brand-text:hover {
   color: #d86d48;
+}
+
+.logo-img-footer {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height:120px;
+  margin-bottom: 55px;
+  z-index: 0;
 }
 
 header.hero-img {
@@ -370,4 +411,25 @@ header.hero-img .fa-angles-down {
     border-radius: 25px;
     margin: 30px;
   }
+ .navbar-expand-lg .navbar-nav {
+    align-items: center; /* Ta jedna linijka centruje linki menu w pionie! */
 }/*# sourceMappingURL=style.css.map */
+
+
+/* ==========================================================================
+   Niestandardowe Style Przycisków
+   ========================================================================== */
+
+.btn-brand {
+  background-color: #d86d48; /* Główny kolor marki (Twój pomarańczowy) */
+  border-color: #d86d48;     /* Kolor ramki taki sam jak tło */
+  color: #fff;               /* Kolor tekstu dla dobrego kontrastu */
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Płynne przejście koloru */
+}
+
+/* --- Styl przycisku po najechaniu myszką (hover) --- */
+.btn-brand:hover {
+  background-color: #c35a38; /* Ciemniejszy odcień pomarańczu dla efektu "wciśnięcia" */
+  border-color: #c35a38;     /* Zmiana koloru ramki, aby pasowała do tła */
+  color: #fff;               /* Tekst pozostaje biały */
+}

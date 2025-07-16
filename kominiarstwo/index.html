@@ -36,11 +36,14 @@
       id="navId"
       class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3"
     >
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          > <img class="logo-img" src="./img/owoc-milosz-logo-zaklad-kominiarski-ostrzeszow.png" alt="Logo - Owoc usługi komianirskie. Ostrzeszów i okolice.">
-          <span class="red-text">Komin</span>iarstwo</a
-        >
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand me-auto" href="#">
+          <img class="logo-img" src="./img/owoc-milosz-logo-zaklad-kominiarski-ostrzeszow.png" alt="Logo - Owoc usługi komianirskie. Ostrzeszów i okolice.">
+          <!-- Ten span jest ważny dla grupowania tekstu -->
+          <span class="brand-text">
+            <span class="red-text">Komin</span>iarstwo
+          </span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -78,7 +81,7 @@
           data-aos="fade-up"
           data-aos-delay="600"
           href="#onas"
-          class="btn btn-danger rounded-pill text-light text-uppercase"
+          class="btn btn-brand rounded-pill text-light text-uppercase"
         >
           Poznaj nas
         </a>
@@ -425,7 +428,7 @@
                 <a
                   href="tel:+48
               856-833-843"
-                  class="btn btn-danger rounded-pill"
+                  class="btn btn-brand rounded-pill"
                   >zadzwoń</a
                 >
               </div>
@@ -532,7 +535,7 @@
                     data-aos="fade-up"
                     data-aos-delay="600"
                     href="#"
-                    class="btn btn-danger rounded-pill text-light text-uppercase"
+                    class="btn btn-brand rounded-pill text-light text-uppercase"
                   >
                     Zobacz ofertę pracy
                   </a></small
