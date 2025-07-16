@@ -62,7 +62,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width:250px;
+  width:230px;
   height:120px;
   margin-bottom: 55px;
   z-index: 0;
@@ -73,7 +73,7 @@ body {
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   transition: 0.6s;
 }
 
@@ -236,6 +236,7 @@ header.hero-img .fa-angles-down {
   background-color: #fff;
   transition: scale 2s;
   margin: 20px;
+  border-radius: 25px;
 }
 .prices span {
   font-weight: bold;
@@ -244,6 +245,8 @@ header.hero-img .fa-angles-down {
   text-transform: uppercase;
   color: #d86d48;
   font-weight: bold;
+  font-size: 18px;
+  padding: 25px 0 0;
 }
 .prices .price-tag {
   font-weight: bold;
@@ -291,6 +294,7 @@ header.hero-img .fa-angles-down {
      object-fit: cover;
   -o-object-position: 25% 35%;
      object-position: 25% 35%;
+  border-radius: 25px;
 }
 .team .card i {
   padding-right: 15px;
@@ -359,9 +363,11 @@ header.hero-img .fa-angles-down {
     scroll-padding-top: 71px;
   }
   .card-group {
+
     flex-direction: row;
   }
   .card {
+    border-radius: 25px;
     margin: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
